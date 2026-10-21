@@ -1,0 +1,10 @@
+@model HolaMVC.Models.Persona
+
+<div class="container mt-4">
+    <div class="alert alert-success">
+        <h2 class="mb-0">Hola, @Model.Nombre</h2>
+    </div>
+
+    <a asp-controller="Saludo" asp-action="Index"
+       class="btn btn-outline-primary">Volver</a>
+</div>

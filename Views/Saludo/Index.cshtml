@@ -1,0 +1,16 @@
+@model HolaMVC.Models.Persona
+
+<div class="container mt-4">
+    <h1>Saludo personalizado</h1>
+    <p>Escribe tu nombre para recibir un saludo.</p>
+
+    <form asp-controller="Saludo" asp-action="Index" method="post">
+        <div class="mb-3">
+            <label asp-for="Nombre" class="form-label"></label>
+            <input asp-for="Nombre" class="form-control"
+                   placeholder="Escribe tu nombre" />
+            <span asp-validation-for="Nombre" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
